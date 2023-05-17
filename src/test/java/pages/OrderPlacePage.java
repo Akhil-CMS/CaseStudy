@@ -67,13 +67,14 @@ public class OrderPlacePage extends TestBase {
 	}
 	
 	
-	public void formFields(String name, String cou, String cit,String crd, String mnt, String yr) throws InterruptedException {
+	public void formFields(String name, String country, String city,String card,
+			String month, String year) throws InterruptedException {
 		Ordname.sendKeys(name);
-		Ordcountry.sendKeys(cou);
-		Ordcity.sendKeys(cit);
-		Cardno.sendKeys(crd);
-		ExpMonth.sendKeys(mnt);
-		ExpYear.sendKeys(yr);
+		Ordcountry.sendKeys(country);
+		Ordcity.sendKeys(city);
+		Cardno.sendKeys(card);
+		ExpMonth.sendKeys(month);
+		ExpYear.sendKeys(year);
 		placeOrderbtn.click();
 		
 		
@@ -94,8 +95,4 @@ public class OrderPlacePage extends TestBase {
 	{
 		logout.click();
 	}
-	
-
-
-	
-}
+	}
